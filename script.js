@@ -1,9 +1,7 @@
-const password = document.getElementById("password");
-const email = document.getElementById("email");
 const form = document.getElementById("form-login");
 const button = document.querySelector('button#submit');
-const dialog = document.querySelector("#dialog");
 
+const email = document.getElementById("email");
 const emailFeedback = document.getElementById('validationEmailFeedback'); 
 email.addEventListener('input', (e) => {
   e.preventDefault();
@@ -18,6 +16,7 @@ email.addEventListener('input', (e) => {
   }
 })
 
+const password = document.getElementById("password");
 const pswFeedback = document.getElementById('validationPasswordFeedback'); 
 password.addEventListener('input', (e) => {
   if (
@@ -71,8 +70,10 @@ form.addEventListener('submit', (e) => {
   })
   .then((data) => {
     console.log(data);
-    if(!data){
-        console.log("Email dan Password tidak sesuai!");
+    if(data){
+      window.location.href = "profile.php";
+    } else {
+      console.log("Email dan Password tidak sesuai!");
     }
   });
 })
