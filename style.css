@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+:root {
+  --bs-primary: #9BABCE;
+  --bs-primary-rgb: 253, 145, 127;
+  --bs-link-color: #fff;
+  --bs-link-color-rgb: 255, 255, 255;
+  --bs-link-hover-color: #fff;
+  --bs-link-hover-color-rgb: 255, 255, 255;
+}
+
+.bg-pink {
+  background-color: #FFC3B9;
+}
+
+.navbar {
+  --bs-navbar-hover-color: #496989;
+  --bs-navbar-brand-hover-color: #496989;
+  --bs-navbar-active-color: #496989;
+}
+
+.navbar-nav .nav-link,
+.navbar-brand {
+  font-weight: 500;
+  color: rgba(155, 171, 206, 0.9);
+}
+
+a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #496989;
+  transition: transform 0.3s ease;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+  padding: 0px;
+}
+
+.btn-custom {
+  background-color: #F9F07A;
+}
+
+.btn-custom:hover {
+  background-color: rgb(255, 243, 82);
+  font-weight: 500;
+}
+
+.btn-custom:active {
+  background-color: rgb(255, 243, 82) !important;
+}
+
+.dropdown-menu {
+  font-size: 14px;
+  --bs-dropdown-link-hover-color: rgba(var(--bs-body-color), 0.5);
+  --bs-dropdown-link-hover-bg: var(--bs-tertiary-bg);
+  --bs-dropdown-link-active-color: #000;
+  --bs-dropdown-link-active-bg: var(--bs-tertiary-bg);
+  --bs-dropdown-header-color: #6c757d;
+  --bs-dropdown-link-color: rgba(0,0,0,0.5);
+}
+
+.dropdown-menu :hover {
+  font-weight: 500;
+}
+
+.dropdown-item.active {
+  font-weight: 600;
+}
